@@ -1,97 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #1e2230;
-            color: #e0e0e0;
-        }
-        .header, .footer {
-            background-color: #1f1f1f;
-            text-align: center;
-            padding: 15px 0;
-        }
-        .hero {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .hero img {
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .icon {
-            color: #6c757d;
-            transition: color 0.3s ease-in-out;
-        }
-        .icon:hover {
-            color: #17a2b8;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allan James | Portfolio</title>
+
+  <!-- Bootstrap & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <!-- Styles -->
+  <style>
+    body {
+      background-color: #1e2230;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #17a2b8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header, .footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .hero img {
+      width: 140px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #17a2b8;
+    }
+
+    .icon {
+      color: #6c757d;
+      transition: color 0.3s ease;
+    }
+
+    .icon:hover {
+      color: #17a2b8;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .tools-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .tools-grid div {
+      text-align: center;
+    }
+
+    
+  </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Welcome to my Portfolio</h1>
-        <p>Welcome to my personal space on the web!</p>
-    </header>
 
-    <div class="container mt-4">
-        <section class="hero">
-            <img src="https://via.placeholder.com/150" alt="Allan's Avatar">
-            <h2>Hello, I'm Allan James!</h2>
-            <p>A passionate programmer and aspiring Physicist!</p>
-        </section>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="mb-1">Welcome to My Portfolio</h1>
+    <p>A personal space to showcase what I do</p>
+  </header>
 
-        <section>
-            <h3>About Me</h3>
-            <p>I'm Allan, a programming enthusiast and physics student from Kyambogo University. I have a strong passion for technology and education. While I'm close to completing my Bachelor's degree in Physics (only one course unit left), I've also explored the exciting world of programming through various platforms.</p>
-        </section>
+  <!-- Main Container -->
+  <main class="container mt-5">
 
-        <section>
-            <h3>Education</h3>
-            <ul>
-                <li>Bachelor's in Physics (In Progress) - Kyambogo University</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Courses & Skills</h3>
-            <ul>
-                <li>CS50 Introduction to Computer Science - Harvard</li>
-                <li>Responsive Web Design - FreeCodeCamp</li>
-                <li>Introduction to MySQL - Coursera</li>
-                <li>C Programming (Data Types, Functions, Pointers, etc., excluding Algorithms)</li>
-                <li>JavaScript - #100Devs with Leon (<a href="https://leonnoel.com/100devs/" target="_blank" class="icon"><i class="fas fa-external-link-alt"></i></a>)</li>
-                <li>Programming with R - Coursera</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Tools I Use</h3>
-            <p class="mb-2">Here are some tools that I frequently use in my projects:</p>
-            <div class="d-flex justify-content-around">
-                <div><i class="fas fa-code icon fa-2x"></i><br>VSCode</div>
-                <div><i class="fas fa-cubes icon fa-2x"></i><br>Code::Blocks</div>
-                <div><i class="fas fa-user-secret icon fa-2x"></i><br>Kali Linux</div>
-            </div>
-        </section>
-
-        <section>
-            <h3>Contact Me</h3>
-            <p>If you’d like to collaborate, learn more, or just say hello, feel free to reach out!</p>
-            <p class="text-center"><i class="fas fa-envelope icon"></i> Email: <a href="mailto:james21.khiisa@gmail.com" class="text-info">james21.khiisa@gmail.com</a></p>
-        </section>
+    <!-- Hero Section -->
+<section class="hero text-center">
+    <img src="/media/profile/avatar.jpg" alt="Allan's Avatar">
+    <h2 class="mt-3">Hi, I'm Allan James</h2>
+    <p>A passionate software developer & aspiring physicist</p>
+  </section>
+  
+  <!-- About -->
+  <section>
+    <h3>About Me</h3>
+    <p>I'm Allan, a software enthusiast and final-year physics student at Kyambogo University. My journey has combined academic exploration in physics with a deep dive into software engineering. I've developed personal projects, contributed to group systems upgrades, and explored web development using Django, HTML, CSS, and JavaScript. I enjoy building tech that solves real problems, and I'm eager to learn and grow through every opportunity.</p>
+  </section>
+  
+  <!-- Education -->
+  <section>
+    <h3>Education</h3>
+    <ul>
+      <li><strong>Bachelor's in Physics</strong> – Kyambogo University</li>
+      <li><strong>CSE Python</strong> – Refactory Uganda</li>
+    </ul>
+  </section>
+  
+  <!-- Courses & Skills -->
+  <section>
+    <h3>Courses & Skills</h3>
+    <ul>
+      <li>CS50 - <a href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home">Introduction to Computer Science</a></li>
+      <li>Responsive Web Design – <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">freeCodeCamp</a></li>
+      <li>JavaScript – <a href="https://leonnoel.com/100devs/">#100Devs</a></li>
+      <li>Introduction to MySQL – Coursera</li>
+      <li>Discrete Mathematics, Data Structures, Algorithms</li>
+    </ul>
+  </section>
+  
+  <!-- Tools -->
+  <section>
+    <h3>Tools I Use</h3>
+    <div class="tools-grid">
+      <div><i class="fas fa-code icon fa-2x mb-2"></i><br>VSCode</div>
+      <div><i class="fas fa-cubes icon fa-2x mb-2"></i><br>Code::Blocks</div>
+      <div><i class="fas fa-terminal icon fa-2x mb-2"></i><br>Kali Linux</div>
+      <div><i class="fab fa-python icon fa-2x mb-2"></i><br>Django</div>
+      <div><i class="fas fa-database icon fa-2x mb-2"></i><br>MySQL</div>
+      <div><i class="fab fa-github icon fa-2x mb-2"></i><br>GitHub</div>
     </div>
+  </section>
+  
+  <!-- Projects & Experience -->
+  <section>
+    <h3>Experience</h3>
+    <ul>
+      <li><strong>Systems Maintenance Intern – Watoto Church</strong><br>Upgraded power systems, installed UPS backups, wrote technical reports, and supported maintenance of AC units. Gained cross-functional skills in electrical systems and teamwork.</li>
+      <li><strong>Group Leader – Kyambogo University</strong><br>Led academic projects, coordinated teamwork, and ensured timely submission and presentation of physics-based reports and software assignments.</li>
+    </ul>
+  </section>
+  
+  <!-- Contact -->
+  <section>
+    <h3>Contact Me</h3>
+    <p>If you'd like to connect or collaborate, feel free to reach out:</p>
+    <p class="text-center">
+      <i class="fas fa-envelope icon"></i> Email:
+      <a href="mailto:james21.khiisa@gmail.com">james21.khiisa@gmail.com</a>
+    </p>
+    <p class="text-center">
+      <i class="fas fa-phone icon"></i> Phone:
+      <a href="tel:+256760211221">0760 211 221</a> / <a href="tel:+256756847972">0756 847 972</a>
+    </p>
+    <p class="text-center">
+      <i class="fab fa-linkedin icon"></i> LinkedIn:
+      <a href="https://www.linkedin.com/in/allan-james-09963a249/" target="_blank">View Profile</a>
+    </p>
+    <p class="text-center">
+      <i class="fab fa-github icon"></i> GitHub:
+      <a href="https://github.com/allanjames-prog" target="_blank">allanjames-prog</a>
+    </p>
+  </section>
+  
 
-    <footer class="footer">
-        <p>© 2025 Allan's Portfolio. Built with Bootstrap and passion!</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
